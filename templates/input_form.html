@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Load Prediction</title>
+</head>
+
+<body>
+    <h1>Enter Route Details</h1>
+    <form action="/predict" method="POST">
+        <label for="Planned Delivery">Planned Delivery</label>
+        <input type="text" id="Planned Delivery" name="Planned Delivery" required><br><br>
+
+        <label for="Day Of Week">Day Of Week</label>
+        <select id="Day Of Week" name="Day Of Week" required>
+            <option value="M_W_F">M_W_F</option>
+            <option value="T_T_S">T_T_S</option>
+            <option value="Sunday">Sunday</option>
+        </select><br><br>
+
+
+        <label for="Weather Condition">Weather Condition:</label>
+        <select id="Weather Condition" name="Weather Condition" required>
+            <option value="Clear Weather">Clear Weather</option>
+            <option value="Disturbed Weather">Disturbed Weather</option>
+        </select><br><br>
+
+
+        <label for="Vehicle Type">Vehicle Type:</label>
+        <select id="Vehicle Type" name="Vehicle Type" required>
+            <option value="Vehicle Type_Container">Vehicle Type_Container</option>
+            <option value="Vehicle Type_Lorry">Vehicle Type_Lorry</option>
+            <option value="Vehicle Type_Trailer">Vehicle Type_Trailer</option>
+            <option value="Vehicle Type_Truck">Vehicle Type_Truck</option>
+        </select><br><br>
+
+        <label for="Traffic Condition">Traffic Condition:</label>
+        <select id="Traffic Condition" name="Traffic Condition" required>
+            <option value="Traffic Conditions_Heavy">Traffic Conditions_Heavy</option>
+            <option value="Traffic Conditions_Light">Traffic Conditions_Light</option>
+            <option value="Traffic Conditions_Moderate">Traffic Conditions_Moderate</option>
+        </select><br><br>
+        
+        <label for="Distance Type">Distance Type</label>
+        <select id="Distance Type" name="Distance Type" required>
+            <option value="Short">Short</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+
+</html>
